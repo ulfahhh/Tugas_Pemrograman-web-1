@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: url('image/login.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .jumbotron {
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 40px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Login</h2>
+        <form id="loginForm" action="dashboard.html">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary"><a href="dashboard.html"></a>Login</button>
+        </form>
+
+        <p class="mt-3">Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+    </div>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
